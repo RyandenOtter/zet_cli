@@ -7,9 +7,17 @@ NOTE: It is currently not compiled as a package or anything. So, for the time be
 - Clone the git repo.
 - Connect the pipenv by running `pipenv shell`
 - Navigate the `zet_cli` folder.
-- Execute the `new` command to create a new note:
+- Execute your commands
+
+### Commands
+Execute the `new` command to create a new note:
 ```bash
 python __main__.py new
+```
+
+Execute the `list` command to list all of the notes you have created:
+```bash
+python __main__.py list
 ```
 
 ToDo:

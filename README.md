@@ -22,6 +22,7 @@ python zet_cli/__main__.py list
 
 ToDo:
 - [x] Add feature to automatically open new notes in NeoVim
+- [ ] Build a django website that sits on top of your notes folder, and serves the markdown up in HTML
 - [ ] Compile this so it can be installed and run as a CLI tool
 - [ ] Add the ability to specify and use templates when creating new notes
 

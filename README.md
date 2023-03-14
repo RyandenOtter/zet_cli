@@ -14,4 +14,5 @@ python __main__.py new
 
 ToDo:
 - [ ] Compile this so it can be installed and run as a CLI tool
+- [ ] Add the ability to specify and use templates when creating new notes
 

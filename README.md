@@ -21,6 +21,8 @@ python __main__.py list
 ```
 
 ToDo:
+- [x] Add feature to automatically open new notes in NeoVim
+- [ ] Clean up the codebase. Add some more comments.
 - [ ] Compile this so it can be installed and run as a CLI tool
 - [ ] Add the ability to specify and use templates when creating new notes
 

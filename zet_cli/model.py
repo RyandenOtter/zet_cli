@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from datetime import datetime
 import os
 from pathlib import Path
+from subprocess import call
 
 
 @dataclass
@@ -10,6 +11,7 @@ class Configuration():
     file_path:Path = Path(os.getenv("ZET_PATH", Path(Path.home(), 'zet')))
     file_name = os.getenv("ZET_FILE_NAME", "README.md")
     folder_name_format = os.getenv("ZET_FOLDER_NAME_FORMAT", "%Y%m%d%H%M%S%f")
+    editor = os.environ.get('EDITOR', 'nvim')
     template = "# Q: \n\n" \
             "Related:\n-\n\n" \
             "Tags:\n-"
@@ -43,6 +45,8 @@ def create_new_zettelkasten():
     new_file = Path(folder_path, configuration.file_name)
     with open(new_file, 'w') as file:
         file.write(configuration.template)
+        file.flush()
+        call([configuration.editor, file.name])
     
     print(new_file)
 

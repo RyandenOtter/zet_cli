@@ -6,7 +6,7 @@ This little application is a tool that I wrote to help me quickly create Zettelk
 NOTE: It is currently not compiled as a package or anything. So, for the time being you have to run it manually.
 - Clone the git repo.
 - Connect the pipenv by running `pipenv shell`
-- Navigate the `zet_cli` folder.
+- Navigate to the `zet_cli` folder.
 - Execute your commands
 
 ### Commands
@@ -43,5 +43,6 @@ ToDo:
 - [x] Add the ability to specify and use templates when creating new notes
 - [x] Add the ability to specify your own templates.
 - [ ] Clean up the codebase. Add some more comments.
+- [ ] Build a django website that sits on top of your notes folder, and serves the markdown up in HTML
 - [ ] Compile this so it can be installed and run as a CLI tool
 
